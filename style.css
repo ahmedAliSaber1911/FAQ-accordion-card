@@ -6,6 +6,7 @@
 --Light-grayish-blue: hsl(240, 5%, 91%);
 --fontSize: 12px
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -61,9 +62,12 @@ height: 100%;
 }
 .questionTitle{
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 15px;
     color: var(--Very-dark-desaturated-blue);
+}
+.questionTitle:hover{
+    color: var(--Soft-red);
 }
 .question{
     display: flex;
@@ -87,4 +91,7 @@ height: 100%;
     position: absolute;
     top: 42%;
     left: -25%;
+}
+.active > .answer{
+    display: block;
 }
